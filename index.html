@@ -2424,7 +2424,7 @@ const PORTFOLIO_DATA = {
       description: "Engineered and deployed the primary news publishing digital portal for Mediamax Network Limited. Built custom high-performance WordPress theme architecture directly from complex Figma prototypes, delivering pixel-perfect responsiveness, optimized typography, and sub-second article loading during peak breaking news cycles.",
       demoUrl: "https://peopledaily.digital",
       displayUrl: "peopledaily.digital",
-      screenshotUrl: "https://s0.wp.com/mshots/v1/https%3A%2F%2Fpeopledaily.digital?w=900",
+      screenshotUrl: "assets/screenshots/peopledaily.png",
       accentColor: "#dc2626",
       tags: ["Custom WordPress Theme", "PHP", "Figma-to-WordPress", "MySQL", "High-Traffic News", "Core Web Vitals"],
       highlights: [
@@ -2445,7 +2445,7 @@ const PORTFOLIO_DATA = {
       description: "Custom WordPress broadcasting and news stream platform developed for K24 TV. Integrates live broadcast streams, video on demand, breaking news tickers, and high-concurrency content delivery.",
       demoUrl: "https://k24.digital",
       displayUrl: "k24.digital",
-      screenshotUrl: "https://s0.wp.com/mshots/v1/https%3A%2F%2Fk24.digital?w=900",
+      screenshotUrl: "assets/screenshots/k24.png",
       accentColor: "#2563eb",
       tags: ["WordPress Core", "PHP", "Live Stream Integration", "Video on Demand", "Redis Caching", "REST API"],
       highlights: [
@@ -2465,7 +2465,7 @@ const PORTFOLIO_DATA = {
       description: "The central corporate digital presence for Mediamax Network Limited. Showcases the corporate brand portfolio, executive leadership, press releases, corporate governance, and multi-channel asset directories.",
       demoUrl: "https://mediamaxnetwork.co.ke",
       displayUrl: "mediamaxnetwork.co.ke",
-      screenshotUrl: "https://s0.wp.com/mshots/v1/https%3A%2F%2Fmediamaxnetwork.co.ke?w=900",
+      screenshotUrl: "assets/screenshots/mediamaxnetwork.png",
       accentColor: "#0284c7",
       tags: ["WordPress", "Custom PHP Theme", "Corporate Media Hub", "SEO Optimization", "Security Hardening"],
       highlights: [
@@ -2485,7 +2485,7 @@ const PORTFOLIO_DATA = {
       description: "Spearheaded web architecture and custom components for mediamaxwaves.com, integrating data-optimized regional audio broadcasts and podcast streaming functionalities for over 10 million consumers nationwide.",
       demoUrl: "https://mediamaxwaves.com",
       displayUrl: "mediamaxwaves.com",
-      screenshotUrl: "https://s0.wp.com/mshots/v1/https%3A%2F%2Fmediamaxwaves.com?w=900",
+      screenshotUrl: "assets/screenshots/mediamaxwaves.png",
       accentColor: "#7c3aed",
       tags: ["WordPress Audio Platform", "PHP", "Podcast RSS", "Data-Optimized Audio", "10M+ Consumers"],
       highlights: [
@@ -2505,7 +2505,7 @@ const PORTFOLIO_DATA = {
       description: "Designed and developed an optimized custom WordPress platform for an ICPAK-licensed audit and advisory firm. Implemented strict layout constraints matching client-facing design parameters and secured administrative endpoints against vulnerabilities.",
       demoUrl: "https://clyde-associates.com",
       displayUrl: "clyde-associates.com",
-      screenshotUrl: "https://s0.wp.com/mshots/v1/https%3A%2F%2Fclyde-associates.com?w=900",
+      screenshotUrl: "assets/screenshots/clyde_associates.png",
       accentColor: "#0d9488",
       tags: ["Custom WordPress Theme", "PHP", "Financial Advisory", "Endpoint Hardening", "OWASP Compliance"],
       highlights: [
@@ -2525,7 +2525,7 @@ const PORTFOLIO_DATA = {
       description: "Built a highly interactive service platform incorporating real-time operational plugins, customer support integrations (Tidio), automated appointment booking routing, and conversion-optimized lead capture funnels.",
       demoUrl: "https://dial-a-virtual-assistant.com",
       displayUrl: "dial-a-virtual-assistant.com",
-      screenshotUrl: "https://s0.wp.com/mshots/v1/https%3A%2F%2Fdial-a-virtual-assistant.com?w=900",
+      screenshotUrl: "assets/screenshots/dial_a_virtual_assistant.png",
       accentColor: "#ea580c",
       tags: ["WordPress", "Custom Plugin Architecture", "Tidio Chat", "Booking Automation", "Lead Conversion"],
       highlights: [
@@ -2545,7 +2545,7 @@ const PORTFOLIO_DATA = {
       description: "Spearheaded the development of a cross-platform farmer ecosystem using MongoDB, Express.js, React, Node.js, and React Native. Integrated Python data-manipulation libraries to optimize resource allocation and yield forecasting, successfully benefiting over 139,000 farmers.",
       demoUrl: "https://github.com/Omilia25/ifmis-app",
       displayUrl: "github.com/Omilia25/ifmis-app",
-      screenshotUrl: "https://s0.wp.com/mshots/v1/https%3A%2F%2Fgithub.com%2FOmilia25%2Fifmis-app?w=900",
+      screenshotUrl: "assets/screenshots/alika_farmer_system.png",
       accentColor: "#16a34a",
       tags: ["MERN Stack", "React Native", "Python Data Manipulation", "MongoDB", "139K+ Farmers"],
       highlights: [
@@ -2565,7 +2565,7 @@ const PORTFOLIO_DATA = {
       description: "Conceptualized and deployed an innovative MERN-stack advertising solution. Attracted 3,200 unique users, streamlined automated booking of 1,200 concurrent ads, and generated KES 2.4 million in platform revenue.",
       demoUrl: "https://github.com/Omilia25",
       displayUrl: "github.com/Omilia25",
-      screenshotUrl: "https://s0.wp.com/mshots/v1/https%3A%2F%2Fgithub.com%2FOmilia25?w=900",
+      screenshotUrl: "assets/screenshots/newvision_classifieds.png",
       accentColor: "#d97706",
       tags: ["React.js", "Node.js", "MongoDB", "Ad Automation", "KES 2.4M Revenue"],
       highlights: [
@@ -3151,7 +3151,12 @@ function initProjects() {
             </div>
 
             <div class="project-screenshot-container">
-              ${renderProjectCanvas(project)}
+              <img 
+                src="${project.screenshotUrl}" 
+                alt="${escapeHTML(project.title)} Live Screenshot" 
+                class="project-screenshot-img" 
+                loading="lazy" 
+              />
               
               <a href="${project.demoUrl}" target="_blank" rel="noopener noreferrer" class="project-screenshot-overlay" title="Open ${escapeHTML(project.title)} in new tab">
                 <span class="overlay-visit-btn">
@@ -3308,8 +3313,12 @@ window.openProjectModal = function (projectId) {
     <h2 class="modal-title">${escapeHTML(project.title)}</h2>
     <p class="modal-tagline">${escapeHTML(project.tagline)}</p>
 
-    <div style="margin: 20px 0; border: 1px solid var(--border-color); border-radius: var(--radius-sm); overflow: hidden; aspect-ratio: 16/9.5;">
-      ${renderProjectCanvas(project)}
+    <div style="margin: 20px 0; border: 1px solid var(--border-color); border-radius: var(--radius-sm); overflow: hidden;">
+      <div style="background: #f1f5f9; padding: 8px 14px; font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted); border-bottom: 1px solid var(--border-color); display: flex; align-items: center; justify-content: space-between;">
+        <span>🔒 ${escapeHTML(project.displayUrl || project.demoUrl)}</span>
+        <span style="color: var(--wp-blue); font-weight: 700;">Live Production Site</span>
+      </div>
+      <img src="${project.screenshotUrl}" alt="${escapeHTML(project.title)} Preview" style="width: 100%; aspect-ratio: 16/9.5; object-fit: cover; object-position: top center;" />
     </div>
 
     <h3 class="modal-section-heading">Architectural Overview</h3>

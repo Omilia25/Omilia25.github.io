@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Eng Kelvin Omilia | Senior Web &amp; Advanced WordPress Developer</title>
-  <meta name="description" content="Portfolio of Eng Kelvin Omilia (@Omilia25) - Senior Web & Advanced WordPress Developer specializing in custom theme engineering, Figma-to-WordPress translation, high-traffic media portals, and enterprise security hardening.">
-  <meta name="theme-color" content="#f6f7fb">
+  <meta name="description" content="Portfolio of Eng Kelvin Omilia (@Omilia25) - Senior Web & Advanced WordPress Developer specializing in custom theme engineering, Figma-to-WordPress translation, high-traffic media portals (10M+ consumers), and enterprise security hardening.">
+  <meta name="theme-color" content="#f5f7fb">
 
   <!-- Open Graph / Meta -->
   <meta property="og:type" content="website">
@@ -16,30 +16,29 @@
   <!-- Google Fonts: Plus Jakarta Sans, Inter, JetBrains Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <style>
 /* ==========================================================================
-   Ultra-Modern Frosted Glassmorphism Light Mode Portfolio
-   Inspired by Top-Tier Product Designer Showcase (Pinterest Style)
+   Ultra-Modern Frosted Glassmorphism Portfolio — Design System
    Tailored for Eng Kelvin Omilia (@Omilia25)
    ========================================================================== */
 
 :root {
-  --font-display: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-mono: 'JetBrains Mono', Menlo, Consolas, monospace;
+  --font-display: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', Menlo, Monaco, Consolas, monospace;
 
   /* Luminous Pearl Light Palette */
-  --bg-page: #f5f6fa;
-  --bg-glass: rgba(255, 255, 255, 0.72);
-  --bg-glass-hover: rgba(255, 255, 255, 0.88);
+  --bg-page: #f5f7fb;
+  --bg-glass: rgba(255, 255, 255, 0.76);
+  --bg-glass-hover: rgba(255, 255, 255, 0.92);
   --bg-glass-solid: #ffffff;
-  --bg-pill: rgba(255, 255, 255, 0.85);
+  --bg-pill: rgba(255, 255, 255, 0.88);
 
-  --border-glass: rgba(255, 255, 255, 0.85);
-  --border-glass-subtle: rgba(226, 232, 240, 0.65);
-  --border-glass-hover: rgba(148, 163, 184, 0.4);
+  --border-glass: rgba(255, 255, 255, 0.88);
+  --border-subtle: rgba(226, 232, 240, 0.75);
+  --border-glass-hover: rgba(199, 210, 254, 0.6);
 
   --text-primary: #0f172a;
   --text-secondary: #334155;
@@ -57,17 +56,19 @@
   --accent-whatsapp: #25d366;
 
   --shadow-glass: 0 10px 30px -5px rgba(15, 23, 42, 0.04), 0 2px 8px -1px rgba(0, 0, 0, 0.02);
-  --shadow-glass-hover: 0 20px 40px -10px rgba(15, 23, 42, 0.08), 0 4px 14px -2px rgba(0, 0, 0, 0.03);
-  --shadow-floating: 0 12px 36px rgba(15, 23, 42, 0.07);
+  --shadow-glass-hover: 0 20px 40px -10px rgba(15, 23, 42, 0.09), 0 4px 14px -2px rgba(0, 0, 0, 0.03);
+  --shadow-floating: 0 16px 40px rgba(15, 23, 42, 0.08);
 
-  --radius-sm: 10px;
-  --radius-md: 18px;
-  --radius-lg: 26px;
-  --radius-xl: 34px;
+  --radius-xs: 8px;
+  --radius-sm: 12px;
+  --radius-md: 20px;
+  --radius-lg: 28px;
+  --radius-xl: 36px;
   --radius-full: 9999px;
 
   --max-width: 1140px;
-  --transition: all 250ms cubic-bezier(0.16, 1, 0.3, 1);
+  --transition: all 260ms cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-smooth: all 400ms cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 *, *::before, *::after {
@@ -82,8 +83,9 @@ html {
   color: var(--text-primary);
   background-color: var(--bg-page);
   scroll-behavior: smooth;
-  scroll-padding-top: 100px;
+  scroll-padding-top: 96px;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
@@ -91,10 +93,10 @@ body {
   line-height: 1.6;
   background-color: var(--bg-page);
   background-image: 
-    radial-gradient(at 0% 0%, rgba(224, 231, 255, 0.65) 0px, transparent 45%),
-    radial-gradient(at 100% 0%, rgba(243, 232, 255, 0.55) 0px, transparent 45%),
-    radial-gradient(at 100% 50%, rgba(224, 242, 254, 0.45) 0px, transparent 45%),
-    radial-gradient(at 0% 100%, rgba(238, 242, 255, 0.55) 0px, transparent 50%);
+    radial-gradient(at 0% 0%, rgba(224, 231, 255, 0.7) 0px, transparent 48%),
+    radial-gradient(at 100% 0%, rgba(243, 232, 255, 0.6) 0px, transparent 45%),
+    radial-gradient(at 100% 50%, rgba(224, 242, 254, 0.5) 0px, transparent 45%),
+    radial-gradient(at 0% 100%, rgba(238, 242, 255, 0.6) 0px, transparent 50%);
   background-attachment: fixed;
   overflow-x: hidden;
   position: relative;
@@ -124,6 +126,12 @@ button {
   cursor: pointer;
 }
 
+:focus-visible {
+  outline: 2px solid var(--accent-indigo);
+  outline-offset: 3px;
+  border-radius: var(--radius-sm);
+}
+
 .container {
   width: 100%;
   max-width: var(--max-width);
@@ -131,49 +139,69 @@ button {
   padding: 0 24px;
 }
 
-/* Ambient Liquid Glass Orbs */
+/* ==========================================================================
+   Ambient Animated Liquid Glass Orbs
+   ========================================================================== */
 .ambient-orb {
   position: absolute;
   border-radius: 50%;
-  filter: blur(50px);
+  filter: blur(60px);
   pointer-events: none;
   z-index: -1;
   opacity: 0.65;
+  will-change: transform;
 }
 
 .orb-top-right {
-  width: 360px;
-  height: 360px;
-  background: radial-gradient(circle, rgba(199, 210, 254, 0.8) 0%, rgba(224, 231, 255, 0) 70%);
-  top: 40px;
-  right: -60px;
+  width: 420px;
+  height: 420px;
+  background: radial-gradient(circle, rgba(199, 210, 254, 0.85) 0%, rgba(224, 231, 255, 0) 70%);
+  top: -60px;
+  right: -80px;
+  animation: orbFloat1 20s ease-in-out infinite alternate;
 }
 
 .orb-mid-left {
-  width: 300px;
-  height: 300px;
-  background: radial-gradient(circle, rgba(224, 242, 254, 0.7) 0%, rgba(240, 249, 255, 0) 70%);
-  top: 750px;
-  left: -80px;
+  width: 380px;
+  height: 380px;
+  background: radial-gradient(circle, rgba(224, 242, 254, 0.75) 0%, rgba(240, 249, 255, 0) 70%);
+  top: 720px;
+  left: -100px;
+  animation: orbFloat2 24s ease-in-out infinite alternate;
 }
 
 .orb-bottom-right {
-  width: 340px;
-  height: 340px;
-  background: radial-gradient(circle, rgba(237, 233, 254, 0.7) 0%, rgba(245, 243, 255, 0) 70%);
-  bottom: 200px;
-  right: -50px;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(237, 233, 254, 0.75) 0%, rgba(245, 243, 255, 0) 70%);
+  bottom: 180px;
+  right: -60px;
+  animation: orbFloat1 22s ease-in-out infinite alternate-reverse;
 }
 
-/* Glass Card Component */
+@keyframes orbFloat1 {
+  0% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(30px, -25px) scale(1.06); }
+  100% { transform: translate(-20px, 20px) scale(0.96); }
+}
+
+@keyframes orbFloat2 {
+  0% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(-30px, 30px) scale(1.08); }
+  100% { transform: translate(25px, -20px) scale(0.94); }
+}
+
+/* ==========================================================================
+   Frosted Glass Panel Component
+   ========================================================================== */
 .glass-panel {
   background: var(--bg-glass);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
   border: 1px solid var(--border-glass);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-glass);
-  transition: var(--transition);
+  transition: var(--transition-smooth);
 }
 
 .glass-panel:hover {
@@ -182,7 +210,9 @@ button {
   box-shadow: var(--shadow-glass-hover);
 }
 
-/* Floating Pill Header */
+/* ==========================================================================
+   Floating Pill Navigation Bar
+   ========================================================================== */
 .floating-header-wrapper {
   position: fixed;
   top: 16px;
@@ -192,21 +222,23 @@ button {
   justify-content: center;
   z-index: 1000;
   padding: 0 16px;
+  transition: var(--transition);
 }
 
 .floating-nav {
-  width: min(100%, 1080px);
-  height: 60px;
-  background: rgba(255, 255, 255, 0.84);
-  backdrop-filter: blur(24px);
-  -webkit-backdrop-filter: blur(24px);
+  width: min(100%, 1100px);
+  height: 64px;
+  background: rgba(255, 255, 255, 0.86);
+  backdrop-filter: blur(26px);
+  -webkit-backdrop-filter: blur(26px);
   border: 1px solid rgba(255, 255, 255, 0.95);
   border-radius: var(--radius-full);
-  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05), 0 1px 3px rgba(0, 0, 0, 0.02);
+  box-shadow: 0 12px 34px rgba(15, 23, 42, 0.06), 0 1px 3px rgba(0, 0, 0, 0.02);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 20px;
+  padding: 0 18px 0 22px;
+  transition: var(--transition);
 }
 
 .brand-pill {
@@ -216,16 +248,43 @@ button {
   font-family: var(--font-display);
   font-weight: 800;
   font-size: 1.05rem;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.025em;
   color: var(--text-primary);
+  flex-shrink: 0;
 }
 
-.brand-indicator {
+.brand-pill:hover {
+  opacity: 0.9;
+}
+
+.brand-indicator-ring {
+  position: relative;
+  width: 10px;
+  height: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand-indicator-core {
   width: 9px;
   height: 9px;
   border-radius: 50%;
   background-color: var(--accent-emerald);
-  box-shadow: 0 0 10px rgba(16, 185, 129, 0.6);
+}
+
+.brand-indicator-pulse {
+  position: absolute;
+  inset: -3px;
+  border-radius: 50%;
+  background: rgba(16, 185, 129, 0.4);
+  animation: pulseBeacon 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulseBeacon {
+  0% { transform: scale(0.9); opacity: 0.8; }
+  50% { transform: scale(1.5); opacity: 0; }
+  100% { transform: scale(0.9); opacity: 0; }
 }
 
 .brand-role-chip {
@@ -234,34 +293,58 @@ button {
   font-weight: 700;
   color: var(--accent-indigo);
   background: rgba(79, 70, 229, 0.08);
+  border: 1px solid rgba(79, 70, 229, 0.15);
   padding: 3px 9px;
   border-radius: var(--radius-full);
   letter-spacing: 0.02em;
+  white-space: nowrap;
 }
 
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 22px;
+  gap: 6px;
   list-style: none;
 }
 
 .nav-item a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-display);
   font-size: 0.875rem;
   font-weight: 600;
   color: var(--text-muted);
-  padding: 6px 12px;
+  padding: 7px 13px;
   border-radius: var(--radius-full);
   transition: var(--transition);
+  position: relative;
 }
 
-.nav-item a:hover,
-.nav-item a.active {
+.nav-item a:hover {
   color: var(--text-primary);
   background: rgba(15, 23, 42, 0.05);
 }
 
-.btn-pill-dark {
+.nav-item a.active {
+  color: var(--text-primary);
+  background: rgba(15, 23, 42, 0.07);
+  font-weight: 700;
+}
+
+.nav-item a.active::after {
+  content: '';
+  position: absolute;
+  bottom: 2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 14px;
+  height: 2px;
+  background: var(--accent-indigo);
+  border-radius: 2px;
+}
+
+.nav-cta-btn {
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -269,104 +352,85 @@ button {
   color: var(--text-white);
   padding: 9px 20px;
   border-radius: var(--radius-full);
+  font-family: var(--font-display);
   font-size: 0.85rem;
   font-weight: 700;
-  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.18);
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.16);
   transition: var(--transition);
+  flex-shrink: 0;
 }
 
-.btn-pill-dark:hover {
+.nav-cta-btn:hover {
   background-color: var(--accent-dark-hover);
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(15, 23, 42, 0.25);
   color: var(--text-white);
 }
 
+.nav-cta-btn svg {
+  transition: transform 200ms ease;
+}
+
+.nav-cta-btn:hover svg {
+  transform: translateX(3px);
+}
+
 .mobile-toggle-btn {
   display: none;
-  padding: 6px;
+  padding: 8px;
   color: var(--text-primary);
+  border-radius: var(--radius-sm);
+  transition: var(--transition);
 }
 
-/* Hero Section */
-.hero-section {
-  padding-top: 130px;
-  padding-bottom: 70px;
+.mobile-toggle-btn:hover {
+  background: rgba(15, 23, 42, 0.05);
 }
 
-.hero-grid {
-  display: grid;
-  grid-template-columns: 1.15fr 0.85fr;
-  gap: 48px;
-  align-items: center;
-}
-
-.hero-kicker-pill {
+/* ==========================================================================
+   Buttons & Micro-Interactions
+   ========================================================================== */
+.btn-pill-dark {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: rgba(255, 255, 255, 0.9);
-  backdrop-filter: blur(12px);
-  border: 1px solid rgba(226, 232, 240, 0.8);
-  padding: 6px 14px;
+  background-color: var(--accent-dark);
+  color: var(--text-white);
+  padding: 11px 24px;
   border-radius: var(--radius-full);
-  font-size: 0.75rem;
-  font-family: var(--font-mono);
-  font-weight: 700;
-  color: var(--text-secondary);
-  letter-spacing: 0.04em;
-  margin-bottom: 20px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
-}
-
-.hero-title-name {
   font-family: var(--font-display);
-  font-size: clamp(2.5rem, 5vw, 3.75rem);
-  font-weight: 800;
-  line-height: 1.1;
-  letter-spacing: -0.035em;
-  color: var(--text-primary);
-  margin-bottom: 8px;
-}
-
-.hero-title-role {
-  font-family: var(--font-display);
-  font-size: clamp(1.4rem, 2.8vw, 2.1rem);
+  font-size: 0.875rem;
   font-weight: 700;
-  letter-spacing: -0.025em;
-  line-height: 1.25;
-  background: linear-gradient(135deg, #1e293b 0%, #3b82f6 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin-bottom: 18px;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.18);
+  transition: var(--transition);
 }
 
-.hero-bio {
-  font-size: 1.0625rem;
-  color: var(--text-muted);
-  line-height: 1.7;
-  max-width: 580px;
-  margin-bottom: 28px;
+.btn-pill-dark:hover {
+  background-color: var(--accent-dark-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.26);
+  color: var(--text-white);
 }
 
-.hero-cta-group {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 14px;
-  margin-bottom: 36px;
+.btn-pill-dark svg {
+  transition: transform 200ms ease;
+}
+
+.btn-pill-dark:hover svg {
+  transform: translateY(2px);
 }
 
 .btn-pill-frosted {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: rgba(255, 255, 255, 0.85);
-  backdrop-filter: blur(14px);
-  border: 1px solid rgba(226, 232, 240, 0.9);
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(226, 232, 240, 0.95);
   color: var(--text-primary);
   padding: 10px 22px;
   border-radius: var(--radius-full);
+  font-family: var(--font-display);
   font-size: 0.875rem;
   font-weight: 700;
   box-shadow: var(--shadow-glass);
@@ -380,20 +444,98 @@ button {
   box-shadow: var(--shadow-glass-hover);
 }
 
+/* ==========================================================================
+   Hero Section
+   ========================================================================== */
+.hero-section {
+  padding-top: 136px;
+  padding-bottom: 70px;
+  position: relative;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.hero-kicker-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(226, 232, 240, 0.85);
+  padding: 6px 14px;
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  font-family: var(--font-mono);
+  font-weight: 700;
+  color: var(--text-secondary);
+  letter-spacing: 0.04em;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
+}
+
+.hero-kicker-icon {
+  color: var(--accent-indigo);
+  display: flex;
+}
+
+.hero-title-name {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 5.2vw, 3.85rem);
+  font-weight: 800;
+  line-height: 1.08;
+  letter-spacing: -0.035em;
+  color: var(--text-primary);
+  margin-bottom: 10px;
+}
+
+.hero-title-role {
+  font-family: var(--font-display);
+  font-size: clamp(1.4rem, 2.8vw, 2.15rem);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  line-height: 1.25;
+  background: linear-gradient(135deg, #0f172a 0%, #3b82f6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
+}
+
+.hero-bio {
+  font-size: 1.0625rem;
+  color: var(--text-muted);
+  line-height: 1.72;
+  max-width: 580px;
+  margin-bottom: 30px;
+}
+
+.hero-cta-group {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-bottom: 36px;
+}
+
 .hero-trust-bar {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
   flex-wrap: wrap;
-  padding-top: 20px;
-  border-top: 1px solid rgba(226, 232, 240, 0.6);
+  padding-top: 22px;
+  border-top: 1px solid rgba(226, 232, 240, 0.75);
 }
 
 .trust-label {
+  font-family: var(--font-display);
   font-size: 0.75rem;
-  font-weight: 700;
+  font-weight: 800;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.06em;
   color: var(--text-light);
 }
 
@@ -405,16 +547,31 @@ button {
   font-size: 0.75rem;
   font-weight: 600;
   color: var(--text-secondary);
-  background: rgba(255, 255, 255, 0.7);
-  border: 1px solid rgba(226, 232, 240, 0.7);
-  padding: 4px 10px;
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(226, 232, 240, 0.85);
+  padding: 4px 11px;
   border-radius: var(--radius-full);
+  transition: var(--transition);
 }
 
-/* Right Profile Card with Glass Frame */
+.trust-chip:hover {
+  background: #ffffff;
+  border-color: rgba(148, 163, 184, 0.5);
+  transform: translateY(-1px);
+}
+
+.trust-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent-indigo);
+  opacity: 0.7;
+}
+
+/* Right Floating Visual Card */
 .hero-visual-card {
   position: relative;
-  background: linear-gradient(145deg, rgba(255, 255, 255, 0.85) 0%, rgba(241, 245, 249, 0.6) 100%);
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.9) 0%, rgba(241, 245, 249, 0.65) 100%);
   backdrop-filter: blur(28px);
   -webkit-backdrop-filter: blur(28px);
   border: 1px solid rgba(255, 255, 255, 0.95);
@@ -424,6 +581,11 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: var(--transition-smooth);
+}
+
+.hero-visual-card:hover {
+  box-shadow: 0 30px 70px -15px rgba(15, 23, 42, 0.12), 0 6px 20px rgba(0, 0, 0, 0.03);
 }
 
 .hero-portrait-frame {
@@ -434,7 +596,7 @@ button {
   overflow: hidden;
   position: relative;
   background: linear-gradient(150deg, rgba(238, 242, 255, 0.85) 0%, rgba(245, 243, 255, 0.65) 100%);
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.85);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.9);
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -446,7 +608,7 @@ button {
   object-fit: cover;
   object-position: center 12%;
   filter: drop-shadow(0 12px 24px rgba(15, 23, 42, 0.12));
-  transition: transform 0.4s ease;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .hero-visual-card:hover .hero-portrait-img {
@@ -457,8 +619,8 @@ button {
   position: absolute;
   top: -12px;
   right: 14px;
-  background: rgba(255, 255, 255, 0.94);
-  backdrop-filter: blur(16px);
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(18px);
   border: 1px solid rgba(255, 255, 255, 1);
   border-radius: var(--radius-full);
   padding: 8px 16px;
@@ -470,14 +632,20 @@ button {
   font-weight: 800;
   color: var(--text-primary);
   box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+  animation: badgeFloatTop 6s ease-in-out infinite alternate;
+}
+
+@keyframes badgeFloatTop {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-6px); }
 }
 
 .floating-badge-bottom {
   position: absolute;
   bottom: -16px;
   left: 14px;
-  background: rgba(255, 255, 255, 0.94);
-  backdrop-filter: blur(16px);
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(18px);
   border: 1px solid rgba(255, 255, 255, 1);
   border-radius: var(--radius-md);
   padding: 10px 16px;
@@ -485,28 +653,48 @@ button {
   align-items: center;
   gap: 12px;
   box-shadow: 0 12px 30px rgba(15, 23, 42, 0.09);
+  animation: badgeFloatBottom 7s ease-in-out infinite alternate;
+}
+
+@keyframes badgeFloatBottom {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(5px); }
 }
 
 .trend-sparkline {
   display: flex;
   align-items: flex-end;
   gap: 3px;
-  height: 22px;
+  height: 24px;
 }
 
 .spark-bar {
   width: 4px;
   background: var(--accent-emerald);
   border-radius: 2px;
+  animation: sparkWave 2.5s ease-in-out infinite alternate;
 }
 
-/* Philosophy & Impact Stats Row */
+.spark-bar:nth-child(1) { height: 10px; animation-delay: 0.1s; }
+.spark-bar:nth-child(2) { height: 16px; animation-delay: 0.3s; }
+.spark-bar:nth-child(3) { height: 12px; animation-delay: 0.5s; }
+.spark-bar:nth-child(4) { height: 20px; animation-delay: 0.2s; }
+.spark-bar:nth-child(5) { height: 24px; animation-delay: 0.4s; }
+
+@keyframes sparkWave {
+  0% { transform: scaleY(0.7); }
+  100% { transform: scaleY(1.1); }
+}
+
+/* ==========================================================================
+   Philosophy & Impact Stats Row
+   ========================================================================== */
 .philosophy-section {
   padding: 40px 0 60px 0;
 }
 
 .philosophy-card {
-  padding: 36px 40px;
+  padding: 38px 42px;
   display: grid;
   grid-template-columns: 1.15fr 0.85fr;
   gap: 40px;
@@ -515,11 +703,12 @@ button {
 
 .philosophy-title {
   font-family: var(--font-display);
-  font-size: clamp(1.5rem, 2.5vw, 2.1rem);
+  font-size: clamp(1.5rem, 2.5vw, 2.15rem);
   font-weight: 800;
   letter-spacing: -0.025em;
   color: var(--text-primary);
   margin-bottom: 24px;
+  line-height: 1.25;
 }
 
 .stats-pill-grid {
@@ -529,17 +718,25 @@ button {
 }
 
 .stat-item {
-  background: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(226, 232, 240, 0.8);
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(226, 232, 240, 0.85);
   border-radius: var(--radius-md);
-  padding: 14px 12px;
+  padding: 16px 12px;
   text-align: center;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+  transition: var(--transition);
+}
+
+.stat-item:hover {
+  transform: translateY(-3px);
+  background: #ffffff;
+  border-color: rgba(148, 163, 184, 0.5);
+  box-shadow: var(--shadow-glass);
 }
 
 .stat-num {
   font-family: var(--font-display);
-  font-size: 1.75rem;
+  font-size: 1.85rem;
   font-weight: 800;
   color: var(--text-primary);
   line-height: 1.1;
@@ -547,6 +744,7 @@ button {
 }
 
 .stat-name {
+  font-family: var(--font-display);
   font-size: 0.75rem;
   font-weight: 600;
   color: var(--text-muted);
@@ -555,26 +753,27 @@ button {
 .philosophy-desc {
   font-size: 0.95rem;
   color: var(--text-muted);
-  line-height: 1.7;
+  line-height: 1.72;
 }
 
-/* Services I Offer Section */
-.services-section {
-  padding: 60px 0;
-}
-
+/* ==========================================================================
+   Section Headings
+   ========================================================================== */
 .section-head {
-  margin-bottom: 36px;
+  margin-bottom: 38px;
 }
 
 .section-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
   font-family: var(--font-mono);
   font-size: 0.75rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   color: var(--accent-indigo);
-  margin-bottom: 6px;
+  margin-bottom: 8px;
 }
 
 .section-main-title {
@@ -585,6 +784,13 @@ button {
   color: var(--text-primary);
 }
 
+/* ==========================================================================
+   Services I Offer Section
+   ========================================================================== */
+.services-section {
+  padding: 60px 0;
+}
+
 .services-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -592,23 +798,32 @@ button {
 }
 
 .service-card {
-  padding: 28px 24px;
+  padding: 30px 24px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   border-radius: var(--radius-lg);
+  transition: var(--transition-smooth);
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
 }
 
 .service-icon-box {
-  width: 48px;
-  height: 48px;
-  border-radius: 14px;
+  width: 52px;
+  height: 52px;
+  border-radius: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.35rem;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+  transition: var(--transition);
+}
+
+.service-card:hover .service-icon-box {
+  transform: scale(1.08) rotate(-2deg);
 }
 
 .icon-blue { background: #e0f2fe; color: #0284c7; }
@@ -618,7 +833,7 @@ button {
 
 .service-card-title {
   font-family: var(--font-display);
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   font-weight: 800;
   color: var(--text-primary);
   margin-bottom: 10px;
@@ -626,10 +841,10 @@ button {
 }
 
 .service-card-desc {
-  font-size: 0.85rem;
+  font-size: 0.875rem;
   color: var(--text-muted);
-  line-height: 1.6;
-  margin-bottom: 18px;
+  line-height: 1.65;
+  margin-bottom: 20px;
 }
 
 .service-tags-list {
@@ -644,12 +859,15 @@ button {
   font-size: 0.6875rem;
   font-weight: 600;
   color: var(--text-secondary);
-  background: rgba(241, 245, 249, 0.8);
-  padding: 2px 7px;
-  border-radius: var(--radius-sm);
+  background: rgba(241, 245, 249, 0.85);
+  border: 1px solid rgba(226, 232, 240, 0.7);
+  padding: 3px 8px;
+  border-radius: var(--radius-xs);
 }
 
-/* Technologies I Use Section */
+/* ==========================================================================
+   Technologies I Use Section
+   ========================================================================== */
 .tech-section {
   padding: 40px 0 60px 0;
 }
@@ -662,51 +880,59 @@ button {
 
 .tech-tile {
   background: var(--bg-glass);
-  backdrop-filter: blur(16px);
+  backdrop-filter: blur(18px);
   border: 1px solid var(--border-glass);
   border-radius: var(--radius-md);
   padding: 16px;
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 14px;
   box-shadow: var(--shadow-glass);
   transition: var(--transition);
 }
 
 .tech-tile:hover {
-  transform: translateY(-3px);
+  transform: translateY(-4px);
   background: #ffffff;
   border-color: rgba(255, 255, 255, 1);
   box-shadow: var(--shadow-glass-hover);
 }
 
 .tech-tile-icon {
-  width: 40px;
-  height: 40px;
-  border-radius: 10px;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
   background: #ffffff;
-  border: 1px solid rgba(226, 232, 240, 0.8);
+  border: 1px solid rgba(226, 232, 240, 0.85);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.25rem;
   flex-shrink: 0;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+  transition: var(--transition);
+}
+
+.tech-tile:hover .tech-tile-icon {
+  transform: scale(1.06);
 }
 
 .tech-tile-name {
   font-family: var(--font-display);
-  font-size: 0.875rem;
+  font-size: 0.9rem;
   font-weight: 700;
   color: var(--text-primary);
+  line-height: 1.25;
 }
 
 .tech-tile-sub {
-  font-size: 0.6875rem;
+  font-family: var(--font-body);
+  font-size: 0.7rem;
   color: var(--text-muted);
 }
 
-/* Selected Work / Live Sites Gallery */
+/* ==========================================================================
+   Selected Work / Live Sites Gallery
+   ========================================================================== */
 .projects-section {
   padding: 60px 0 80px 0;
 }
@@ -715,17 +941,18 @@ button {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 10px;
   margin-bottom: 36px;
 }
 
 .filter-pill {
   padding: 8px 18px;
+  font-family: var(--font-display);
   font-size: 0.8125rem;
   font-weight: 700;
   border-radius: var(--radius-full);
-  background: rgba(255, 255, 255, 0.7);
-  border: 1px solid rgba(226, 232, 240, 0.8);
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(226, 232, 240, 0.85);
   color: var(--text-muted);
   transition: var(--transition);
 }
@@ -733,13 +960,14 @@ button {
 .filter-pill:hover {
   color: var(--text-primary);
   border-color: rgba(148, 163, 184, 0.5);
+  background: #ffffff;
 }
 
 .filter-pill.active {
   background: var(--accent-dark);
   color: var(--text-white);
   border-color: var(--accent-dark);
-  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.15);
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.16);
 }
 
 .projects-grid {
@@ -752,12 +980,12 @@ button {
   display: flex;
   flex-direction: column;
   background: var(--bg-glass);
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(22px);
   border: 1px solid var(--border-glass);
   border-radius: var(--radius-lg);
   overflow: hidden;
   box-shadow: var(--shadow-glass);
-  transition: var(--transition);
+  transition: var(--transition-smooth);
 }
 
 .project-card:hover {
@@ -771,9 +999,9 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 16px;
-  background: rgba(248, 250, 252, 0.9);
-  border-bottom: 1px solid rgba(226, 232, 240, 0.8);
+  padding: 11px 18px;
+  background: rgba(248, 250, 252, 0.92);
+  border-bottom: 1px solid rgba(226, 232, 240, 0.85);
 }
 
 .chrome-dots {
@@ -797,17 +1025,18 @@ button {
   align-items: center;
   gap: 6px;
   background: #ffffff;
-  padding: 3px 12px;
+  padding: 4px 13px;
   border-radius: var(--radius-full);
-  border: 1px solid rgba(226, 232, 240, 0.8);
+  border: 1px solid rgba(226, 232, 240, 0.85);
   font-family: var(--font-mono);
   font-size: 0.72rem;
   font-weight: 600;
   color: var(--text-secondary);
-  max-width: 220px;
+  max-width: 240px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
 }
 
 .browser-tag-chip {
@@ -817,8 +1046,8 @@ button {
   text-transform: uppercase;
   color: var(--accent-indigo);
   background: rgba(79, 70, 229, 0.08);
-  padding: 2px 7px;
-  border-radius: var(--radius-sm);
+  padding: 3px 8px;
+  border-radius: var(--radius-xs);
 }
 
 .project-screenshot-container {
@@ -839,20 +1068,20 @@ button {
 }
 
 .project-card:hover .project-screenshot-img {
-  transform: scale(1.025);
+  transform: scale(1.03);
 }
 
 .project-screenshot-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(15, 23, 42, 0.4);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
+  background: rgba(15, 23, 42, 0.38);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
   display: flex;
   align-items: center;
   justify-content: center;
   opacity: 0;
-  transition: opacity 200ms ease;
+  transition: opacity 220ms ease;
 }
 
 .project-card:hover .project-screenshot-overlay {
@@ -863,18 +1092,24 @@ button {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  padding: 10px 22px;
+  padding: 11px 22px;
   background: #ffffff;
   color: var(--text-primary);
+  font-family: var(--font-display);
   font-weight: 700;
   font-size: 0.85rem;
   border-radius: var(--radius-full);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
-  transition: transform 150ms ease;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.16);
+  transform: translateY(6px);
+  transition: var(--transition);
+}
+
+.project-card:hover .overlay-visit-btn {
+  transform: translateY(0);
 }
 
 .overlay-visit-btn:hover {
-  transform: scale(1.06);
+  transform: scale(1.05);
 }
 
 .project-card-body {
@@ -896,7 +1131,7 @@ button {
 
 .project-title {
   font-family: var(--font-display);
-  font-size: 1.3rem;
+  font-size: 1.35rem;
   font-weight: 800;
   letter-spacing: -0.02em;
   color: var(--text-primary);
@@ -924,9 +1159,9 @@ button {
   font-weight: 600;
   color: var(--text-secondary);
   background: rgba(241, 245, 249, 0.85);
-  border: 1px solid rgba(226, 232, 240, 0.7);
+  border: 1px solid rgba(226, 232, 240, 0.75);
   padding: 3px 8px;
-  border-radius: var(--radius-sm);
+  border-radius: var(--radius-xs);
 }
 
 .project-card-footer {
@@ -942,13 +1177,14 @@ button {
   display: inline-flex;
   align-items: center;
   gap: 6px;
+  font-family: var(--font-display);
   font-size: 0.85rem;
   font-weight: 700;
   color: var(--text-white);
   background: var(--accent-dark);
   padding: 8px 18px;
   border-radius: var(--radius-full);
-  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.15);
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.14);
   transition: var(--transition);
 }
 
@@ -962,10 +1198,11 @@ button {
   display: inline-flex;
   align-items: center;
   gap: 6px;
+  font-family: var(--font-display);
   font-size: 0.85rem;
   font-weight: 700;
   color: var(--text-secondary);
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.85);
   border: 1px solid rgba(226, 232, 240, 0.9);
   padding: 8px 16px;
   border-radius: var(--radius-full);
@@ -976,9 +1213,12 @@ button {
   background: #ffffff;
   color: var(--text-primary);
   border-color: rgba(148, 163, 184, 0.5);
+  transform: translateY(-1px);
 }
 
-/* Engineering Process I Follow (4 Stepper Cards: 01, 02, 03, 04) */
+/* ==========================================================================
+   Engineering Process (01, 02, 03, 04 Stepper Cards)
+   ========================================================================== */
 .process-section {
   padding: 60px 0;
 }
@@ -990,36 +1230,64 @@ button {
 }
 
 .process-card {
-  padding: 28px 24px;
+  padding: 30px 24px;
   border-radius: var(--radius-lg);
   display: flex;
   flex-direction: column;
+  position: relative;
+  transition: var(--transition-smooth);
+}
+
+.process-card:hover {
+  transform: translateY(-5px);
+}
+
+.process-top-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
 }
 
 .process-step-num {
   font-family: var(--font-display);
-  font-size: 2.2rem;
+  font-size: 2.25rem;
   font-weight: 800;
   color: rgba(15, 23, 42, 0.15);
-  margin-bottom: 12px;
   line-height: 1;
+}
+
+.process-icon-box {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  background: #ffffff;
+  border: 1px solid rgba(226, 232, 240, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-indigo);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
 }
 
 .process-card-title {
   font-family: var(--font-display);
-  font-size: 1.05rem;
+  font-size: 1.1rem;
   font-weight: 800;
   color: var(--text-primary);
-  margin-bottom: 8px;
+  margin-bottom: 10px;
+  line-height: 1.3;
 }
 
 .process-card-desc {
-  font-size: 0.825rem;
+  font-size: 0.85rem;
   color: var(--text-muted);
-  line-height: 1.6;
+  line-height: 1.65;
 }
 
-/* Experience & Credentials Timeline */
+/* ==========================================================================
+   Experience & Credentials Timeline
+   ========================================================================== */
 .experience-section {
   padding: 60px 0;
 }
@@ -1027,12 +1295,17 @@ button {
 .timeline-list {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 22px;
 }
 
 .timeline-card {
-  padding: 28px 32px;
+  padding: 30px 34px;
   border-radius: var(--radius-lg);
+  transition: var(--transition-smooth);
+}
+
+.timeline-card:hover {
+  transform: translateY(-3px);
 }
 
 .timeline-header-row {
@@ -1041,12 +1314,12 @@ button {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 12px;
-  margin-bottom: 12px;
+  margin-bottom: 14px;
 }
 
 .timeline-role {
   font-family: var(--font-display);
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   font-weight: 800;
   color: var(--text-primary);
 }
@@ -1055,6 +1328,9 @@ button {
   font-size: 0.95rem;
   font-weight: 700;
   color: var(--accent-indigo);
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }
 
 .timeline-date-chip {
@@ -1062,17 +1338,17 @@ button {
   font-size: 0.75rem;
   font-weight: 700;
   color: var(--text-secondary);
-  background: rgba(255, 255, 255, 0.9);
-  border: 1px solid rgba(226, 232, 240, 0.8);
-  padding: 4px 12px;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(226, 232, 240, 0.85);
+  padding: 5px 13px;
   border-radius: var(--radius-full);
 }
 
 .timeline-desc {
-  font-size: 0.9rem;
+  font-size: 0.925rem;
   color: var(--text-muted);
-  line-height: 1.7;
-  margin-bottom: 16px;
+  line-height: 1.72;
+  margin-bottom: 18px;
 }
 
 .timeline-skills-row {
@@ -1083,15 +1359,16 @@ button {
 
 .timeline-skill-pill {
   font-family: var(--font-mono);
-  font-size: 0.6875rem;
+  font-size: 0.7rem;
   font-weight: 600;
   color: var(--text-secondary);
-  background: rgba(241, 245, 249, 0.8);
-  padding: 2px 8px;
-  border-radius: var(--radius-sm);
+  background: rgba(241, 245, 249, 0.85);
+  border: 1px solid rgba(226, 232, 240, 0.7);
+  padding: 3px 9px;
+  border-radius: var(--radius-xs);
 }
 
-/* Credentials Grid */
+/* Credentials Row */
 .credentials-row {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1100,16 +1377,20 @@ button {
 }
 
 .credential-box {
-  padding: 24px;
+  padding: 28px;
   border-radius: var(--radius-md);
+  transition: var(--transition-smooth);
 }
 
 .credential-heading {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   font-family: var(--font-display);
-  font-size: 1.05rem;
+  font-size: 1.1rem;
   font-weight: 800;
   color: var(--text-primary);
-  margin-bottom: 12px;
+  margin-bottom: 14px;
 }
 
 .cert-pill-list {
@@ -1119,17 +1400,26 @@ button {
 }
 
 .cert-pill {
+  font-family: var(--font-display);
   font-size: 0.8rem;
   font-weight: 700;
   color: var(--text-primary);
   background: #ffffff;
-  border: 1px solid rgba(226, 232, 240, 0.8);
+  border: 1px solid rgba(226, 232, 240, 0.85);
   padding: 6px 14px;
   border-radius: var(--radius-full);
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
+  transition: var(--transition);
 }
 
-/* Contact Section (Pinterest "Have a project in mind?") */
+.cert-pill:hover {
+  transform: translateY(-2px);
+  border-color: rgba(148, 163, 184, 0.5);
+}
+
+/* ==========================================================================
+   Contact Section
+   ========================================================================== */
 .contact-section {
   padding: 60px 0 100px 0;
 }
@@ -1177,12 +1467,13 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: rgba(255, 255, 255, 0.85);
-  border: 1px solid rgba(226, 232, 240, 0.8);
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(226, 232, 240, 0.85);
   border-radius: var(--radius-md);
-  padding: 12px 18px;
+  padding: 14px 20px;
+  font-family: var(--font-display);
   font-weight: 700;
-  font-size: 0.9rem;
+  font-size: 0.925rem;
   color: var(--text-primary);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
   transition: var(--transition);
@@ -1195,12 +1486,22 @@ button {
   box-shadow: var(--shadow-glass);
 }
 
+.channel-icon-wrap {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
 .btn-channel-action {
   font-family: var(--font-mono);
   font-size: 0.75rem;
   color: var(--accent-indigo);
   background: rgba(79, 70, 229, 0.08);
-  padding: 4px 10px;
+  padding: 4px 12px;
   border-radius: var(--radius-full);
 }
 
@@ -1208,7 +1509,7 @@ button {
 .contact-form {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 18px;
 }
 
 .form-group-glass {
@@ -1218,17 +1519,18 @@ button {
 }
 
 .form-label-glass {
-  font-size: 0.8rem;
+  font-family: var(--font-display);
+  font-size: 0.825rem;
   font-weight: 700;
   color: var(--text-primary);
 }
 
 .form-input-glass {
-  background: rgba(255, 255, 255, 0.9);
-  border: 1px solid rgba(226, 232, 240, 0.9);
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(226, 232, 240, 0.95);
   border-radius: var(--radius-md);
-  padding: 12px 16px;
-  font-size: 0.9rem;
+  padding: 13px 18px;
+  font-size: 0.925rem;
   color: var(--text-primary);
   transition: var(--transition);
 }
@@ -1244,13 +1546,15 @@ textarea.form-input-glass {
   resize: vertical;
 }
 
-/* Modal Dialog */
+/* ==========================================================================
+   Modal Dialog for Specs
+   ========================================================================== */
 .modal-overlay {
   position: fixed;
   inset: 0;
-  background: rgba(15, 23, 42, 0.5);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  background: rgba(15, 23, 42, 0.52);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1258,7 +1562,7 @@ textarea.form-input-glass {
   z-index: 2000;
   opacity: 0;
   visibility: hidden;
-  transition: var(--transition);
+  transition: var(--transition-smooth);
 }
 
 .modal-overlay.active {
@@ -1267,19 +1571,19 @@ textarea.form-input-glass {
 }
 
 .modal-dialog {
-  background: rgba(255, 255, 255, 0.94);
-  backdrop-filter: blur(30px);
-  -webkit-backdrop-filter: blur(30px);
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(32px);
+  -webkit-backdrop-filter: blur(32px);
   border: 1px solid rgba(255, 255, 255, 1);
   border-radius: var(--radius-xl);
-  max-width: 720px;
+  max-width: 740px;
   width: 100%;
   max-height: 90vh;
   overflow-y: auto;
-  box-shadow: 0 30px 70px -15px rgba(15, 23, 42, 0.2);
-  transform: translateY(20px) scale(0.97);
-  transition: var(--transition);
-  padding: 36px;
+  box-shadow: 0 30px 70px -15px rgba(15, 23, 42, 0.22);
+  transform: translateY(24px) scale(0.97);
+  transition: var(--transition-smooth);
+  padding: 38px;
   position: relative;
 }
 
@@ -1291,13 +1595,13 @@ textarea.form-input-glass {
   position: absolute;
   top: 24px;
   right: 24px;
-  width: 36px;
-  height: 36px;
+  width: 38px;
+  height: 38px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  border: 1px solid rgba(226, 232, 240, 0.8);
+  border: 1px solid rgba(226, 232, 240, 0.85);
   background: #ffffff;
   color: var(--text-muted);
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
@@ -1378,7 +1682,9 @@ textarea.form-input-glass {
   margin-top: 32px;
 }
 
-/* Toast */
+/* ==========================================================================
+   Toast Notification
+   ========================================================================== */
 .toast-container {
   position: fixed;
   bottom: 24px;
@@ -1393,17 +1699,18 @@ textarea.form-input-glass {
 .toast {
   display: flex;
   align-items: center;
-  gap: 12px;
-  padding: 14px 20px;
+  gap: 10px;
+  padding: 14px 22px;
   background: var(--accent-dark);
   color: #ffffff;
   border-radius: var(--radius-full);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+  font-family: var(--font-display);
   font-size: 0.875rem;
   font-weight: 700;
   pointer-events: auto;
   opacity: 0;
-  transform: translateY(12px);
+  transform: translateY(14px);
   transition: var(--transition);
 }
 
@@ -1412,7 +1719,29 @@ textarea.form-input-glass {
   transform: translateY(0);
 }
 
-/* Responsive Breakpoints */
+/* ==========================================================================
+   Scroll Reveal Animations
+   ========================================================================== */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.75s cubic-bezier(0.16, 1, 0.3, 1), transform 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-delay-1 { transition-delay: 0.1s; }
+.reveal-delay-2 { transition-delay: 0.2s; }
+.reveal-delay-3 { transition-delay: 0.3s; }
+.reveal-delay-4 { transition-delay: 0.4s; }
+
+/* ==========================================================================
+   Responsive Breakpoints
+   ========================================================================== */
 @media (max-width: 1024px) {
   .hero-grid {
     grid-template-columns: 1fr;
@@ -1445,7 +1774,7 @@ textarea.form-input-glass {
 }
 
 @media (max-width: 768px) {
-  .nav-links, .btn-pill-dark {
+  .nav-links, .nav-cta-btn {
     display: none;
   }
   .mobile-toggle-btn {
@@ -1482,10 +1811,13 @@ textarea.form-input-glass {
   <!-- Floating Pill Header -->
   <div class="floating-header-wrapper">
     <header class="floating-nav">
-      <a href="#hero" class="brand-pill" aria-label="Eng Kelvin Omilia">
-        <span class="brand-indicator"></span>
+      <a href="#hero" class="brand-pill" aria-label="Eng Kelvin Omilia - Return to top">
+        <span class="brand-indicator-ring">
+          <span class="brand-indicator-pulse"></span>
+          <span class="brand-indicator-core"></span>
+        </span>
         <span>Kelvin Omilia</span>
-        <span class="brand-role-chip">Advanced WP</span>
+        <span class="brand-role-chip">Senior WP Architect</span>
       </a>
 
       <nav aria-label="Main Navigation">
@@ -1493,23 +1825,23 @@ textarea.form-input-glass {
           <li class="nav-item"><a href="#about">About</a></li>
           <li class="nav-item"><a href="#services">Services</a></li>
           <li class="nav-item"><a href="#tech">Tech Stack</a></li>
-          <li class="nav-item"><a href="#projects">Selected Work</a></li>
+          <li class="nav-item"><a href="#projects">Live Sites</a></li>
           <li class="nav-item"><a href="#process">Process</a></li>
           <li class="nav-item"><a href="#experience">Experience</a></li>
           <li class="nav-item"><a href="#contact">Contact</a></li>
         </ul>
       </nav>
 
-      <a href="#contact" class="btn-pill-dark">
-        <span>Let's Talk</span>
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+      <a href="#contact" class="nav-cta-btn">
+        <span>Hire Kelvin</span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
           <line x1="5" y1="12" x2="19" y2="12"></line>
           <polyline points="12 5 19 12 12 19"></polyline>
         </svg>
       </a>
 
-      <button type="button" class="mobile-toggle-btn" id="mobile-menu-toggle" aria-label="Toggle Navigation">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <button type="button" class="mobile-toggle-btn" id="mobile-menu-toggle" aria-label="Toggle Navigation Menu">
+        <svg id="hamburger-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
           <line x1="3" y1="12" x2="21" y2="12"></line>
           <line x1="3" y1="6" x2="21" y2="6"></line>
           <line x1="3" y1="18" x2="21" y2="18"></line>
@@ -1527,14 +1859,18 @@ textarea.form-input-glass {
         <div class="hero-grid">
           
           <!-- Left Column Content -->
-          <div>
+          <div class="reveal">
             <div class="hero-kicker-pill">
-              <span>ðŸ‘‹</span>
-              <span>HELLO, I'M</span>
+              <span class="hero-kicker-icon">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                </svg>
+              </span>
+              <span>SENIOR WEB &amp; WORDPRESS DEVELOPER</span>
             </div>
 
             <h1 class="hero-title-name">Eng Kelvin Omilia</h1>
-            <h2 class="hero-title-role">Senior Web &amp; Advanced WordPress Developer</h2>
+            <h2 class="hero-title-role">Advanced WordPress &amp; Full-Stack Architect</h2>
 
             <p class="hero-bio">
               Translating complex Figma user interfaces into high-performance, pixel-perfect WordPress ecosystems &amp; secure full-stack applications. Proven track record engineering for prominent national media networks (10M+ consumers) and corporate advisory firms.
@@ -1542,8 +1878,8 @@ textarea.form-input-glass {
 
             <div class="hero-cta-group">
               <a href="#projects" class="btn-pill-dark">
-                <span>View My Work</span>
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <span>View Live Sites</span>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                   <line x1="12" y1="5" x2="12" y2="19"></line>
                   <polyline points="19 12 12 19 5 12"></polyline>
                 </svg>
@@ -1557,7 +1893,7 @@ textarea.form-input-glass {
               </a>
 
               <a href="https://github.com/Omilia25" target="_blank" rel="noopener noreferrer" class="btn-pill-frosted">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                   <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
                 </svg>
                 <span>GitHub</span>
@@ -1567,35 +1903,37 @@ textarea.form-input-glass {
             <!-- Trust Bar -->
             <div class="hero-trust-bar">
               <span class="trust-label">Proven At:</span>
-              <span class="trust-chip">Mediamax Network</span>
-              <span class="trust-chip">K24 Digital</span>
-              <span class="trust-chip">People Daily</span>
-              <span class="trust-chip">Datalait</span>
-              <span class="trust-chip">ICPAK Firms</span>
+              <span class="trust-chip"><span class="trust-dot"></span>Mediamax Network</span>
+              <span class="trust-chip"><span class="trust-dot"></span>K24 Digital</span>
+              <span class="trust-chip"><span class="trust-dot"></span>People Daily</span>
+              <span class="trust-chip"><span class="trust-dot"></span>Datalait</span>
+              <span class="trust-chip"><span class="trust-dot"></span>ICPAK Firms</span>
             </div>
           </div>
 
           <!-- Right Column Floating Profile Card -->
-          <div class="hero-visual-card">
+          <div class="hero-visual-card reveal reveal-delay-2">
             <div class="floating-badge-top">
-              <span>â­</span>
-              <span>5+ Years Experience</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="#f59e0b" stroke="#f59e0b" stroke-width="1">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+              </svg>
+              <span>8+ Years Experience</span>
             </div>
 
             <div class="hero-portrait-frame">
-              <img src="assets/profile.png" alt="Eng Kelvin Omilia" class="hero-portrait-img">
+              <img src="assets/profile.png" alt="Eng Kelvin Omilia - Senior WordPress Developer" class="hero-portrait-img">
             </div>
 
             <div class="floating-badge-bottom">
               <div class="trend-sparkline">
-                <span class="spark-bar" style="height: 10px;"></span>
-                <span class="spark-bar" style="height: 16px;"></span>
-                <span class="spark-bar" style="height: 12px;"></span>
-                <span class="spark-bar" style="height: 20px;"></span>
-                <span class="spark-bar" style="height: 22px;"></span>
+                <span class="spark-bar"></span>
+                <span class="spark-bar"></span>
+                <span class="spark-bar"></span>
+                <span class="spark-bar"></span>
+                <span class="spark-bar"></span>
               </div>
               <div>
-                <div style="font-size: 0.75rem; font-weight: 800; color: #0f172a;">+99.8% System Uptime</div>
+                <div style="font-size: 0.78rem; font-weight: 800; color: #0f172a; font-family: var(--font-display);">+99.8% System Uptime</div>
                 <div style="font-size: 0.65rem; color: #64748b; font-family: var(--font-mono);">Zero-Downtime Deployments</div>
               </div>
             </div>
@@ -1610,36 +1948,39 @@ textarea.form-input-glass {
          ========================================================================== -->
     <section class="philosophy-section" id="about">
       <div class="container">
-        <div class="glass-panel philosophy-card">
+        <div class="glass-panel philosophy-card reveal">
           <div>
             <h3 class="philosophy-title">Engineering with Security, Building for Scale.</h3>
             <div class="stats-pill-grid">
               <div class="stat-item">
-                <div class="stat-num">5+</div>
+                <div class="stat-num" data-target="8">8+</div>
                 <div class="stat-name">Years Exp</div>
               </div>
               <div class="stat-item">
-                <div class="stat-num">10M+</div>
+                <div class="stat-num" data-target="10">10M+</div>
                 <div class="stat-name">Consumers</div>
               </div>
               <div class="stat-item">
-                <div class="stat-num">1.2M+</div>
+                <div class="stat-num" data-target="1.2">1.2M+</div>
                 <div class="stat-name">Daily Readers</div>
               </div>
               <div class="stat-item">
-                <div class="stat-num">139K+</div>
+                <div class="stat-num" data-target="139">139K+</div>
                 <div class="stat-name">Farmers Served</div>
               </div>
             </div>
           </div>
           <div>
             <p class="philosophy-desc">
-              Expert Software Engineer with over 5 years specializing in advanced WordPress core development, custom template engineering from Figma, and high-concurrency systems. Expert in manual database migrations, server dashboard optimization (cPanel/Webuzo), and domain authentication compliance (DMARC, SPF, DKIM).
+              Expert Software Engineer with over 8 years of production experience specializing in advanced WordPress core development, bespoke template engineering from Figma, and high-concurrency systems. Proficient in manual database migrations, server dashboard optimization (cPanel/Webuzo), and enterprise domain authentication compliance (DMARC, SPF, DKIM).
             </p>
-            <div style="margin-top: 18px;">
-              <a href="#projects" style="font-size: 0.875rem; font-weight: 700; color: var(--accent-indigo); display: inline-flex; align-items: center; gap: 6px;">
+            <div style="margin-top: 20px;">
+              <a href="#projects" style="font-family: var(--font-display); font-size: 0.875rem; font-weight: 700; color: var(--accent-indigo); display: inline-flex; align-items: center; gap: 8px;">
                 <span>Explore Client Architecture Deep-Dives</span>
-                <span>&rarr;</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
               </a>
             </div>
           </div>
@@ -1648,20 +1989,31 @@ textarea.form-input-glass {
     </section>
 
     <!-- ==========================================================================
-         Services I Offer (4 Frosted Glass Cards)
+         Services I Offer (4 Frosted Glass Cards with Custom Icons)
          ========================================================================== -->
     <section class="services-section" id="services">
       <div class="container">
-        <div class="section-head">
-          <div class="section-kicker">SERVICES I OFFER</div>
+        <div class="section-head reveal">
+          <div class="section-kicker">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+              <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+            </svg>
+            <span>SERVICES I OFFER</span>
+          </div>
           <h2 class="section-main-title">Full-Cycle Web &amp; WordPress Engineering</h2>
         </div>
 
         <div class="services-grid">
           
-          <div class="glass-panel service-card">
+          <div class="glass-panel service-card reveal reveal-delay-1">
             <div>
-              <div class="service-icon-box icon-blue">âš¡</div>
+              <div class="service-icon-box icon-blue">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
               <h3 class="service-card-title">Custom WordPress Architecture</h3>
               <p class="service-card-desc">Bespoke theme engineering from scratch, hooks &amp; filters architecture, Gutenberg custom blocks, and headless WP REST APIs.</p>
             </div>
@@ -1672,9 +2024,16 @@ textarea.form-input-glass {
             </div>
           </div>
 
-          <div class="glass-panel service-card">
+          <div class="glass-panel service-card reveal reveal-delay-2">
             <div>
-              <div class="service-icon-box icon-purple">ðŸŽ¨</div>
+              <div class="service-icon-box icon-purple">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
+                  <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
+                  <path d="M2 2l7.586 7.586"></path>
+                  <circle cx="11" cy="11" r="2"></circle>
+                </svg>
+              </div>
               <h3 class="service-card-title">Figma-to-WordPress Translation</h3>
               <p class="service-card-desc">Pixel-perfect translation of complex Figma prototypes into lightweight, semantic, and cross-browser responsive web experiences.</p>
             </div>
@@ -1685,9 +2044,16 @@ textarea.form-input-glass {
             </div>
           </div>
 
-          <div class="glass-panel service-card">
+          <div class="glass-panel service-card reveal reveal-delay-3">
             <div>
-              <div class="service-icon-box icon-cyan">ðŸ“¡</div>
+              <div class="service-icon-box icon-cyan">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4.93 4.93a10 10 0 0 1 14.14 0"></path>
+                  <path d="M7.76 7.76a6 6 0 0 1 8.48 0"></path>
+                  <circle cx="12" cy="12" r="2"></circle>
+                  <path d="M12 14v7"></path>
+                </svg>
+              </div>
               <h3 class="service-card-title">Media &amp; Streaming Infrastructure</h3>
               <p class="service-card-desc">High-concurrency digital publishing, live audio streaming (Icecast/HLS), video on demand, and Redis object cache invalidation.</p>
             </div>
@@ -1698,9 +2064,14 @@ textarea.form-input-glass {
             </div>
           </div>
 
-          <div class="glass-panel service-card">
+          <div class="glass-panel service-card reveal reveal-delay-4">
             <div>
-              <div class="service-icon-box icon-green">ðŸ›¡ï¸</div>
+              <div class="service-icon-box icon-green">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                  <polyline points="9 12 11 14 15 10"></polyline>
+                </svg>
+              </div>
               <h3 class="service-card-title">Cybersecurity &amp; Systems Hardening</h3>
               <p class="service-card-desc">Domain authentication protocols (DMARC, SPF, DKIM), OWASP Top 10 mitigation, cPanel/Webuzo server tuning, and zero-downtime database migrations.</p>
             </div>
@@ -1720,86 +2091,145 @@ textarea.form-input-glass {
          ========================================================================== -->
     <section class="tech-section" id="tech">
       <div class="container">
-        <div class="section-head">
-          <div class="section-kicker">CORE TECH STACK</div>
+        <div class="section-head reveal">
+          <div class="section-kicker">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+              <polyline points="2 17 12 22 22 17"></polyline>
+              <polyline points="2 12 12 17 22 12"></polyline>
+            </svg>
+            <span>CORE TECH STACK</span>
+          </div>
           <h2 class="section-main-title">Technologies &amp; Frameworks I Use</h2>
         </div>
 
         <div class="tech-grid">
-          <div class="tech-tile">
-            <div class="tech-tile-icon">ðŸŒ</div>
+          <div class="tech-tile reveal reveal-delay-1">
+            <div class="tech-tile-icon" style="color: #21759b;">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18.2a8.2 8.2 0 0 1-5-1.72l4.24-11.64a1.27 1.27 0 0 1 .37.64l2.4 7a18.23 18.23 0 0 1-2 5.72zm5.7-5.26l-2.06-6.17a3.53 3.53 0 0 1 1.4-1.39A8.17 8.17 0 0 1 17.7 15zm-11.4 0a8.16 8.16 0 0 1-.5-2.73 8.35 8.35 0 0 1 1.7-5l3.22 8.84zm7.9-10.9a6.3 6.3 0 0 0-2.2 0l-2-5.5a8.2 8.2 0 0 1 6.2 0z"/>
+              </svg>
+            </div>
             <div>
               <div class="tech-tile-name">WordPress Core</div>
               <div class="tech-tile-sub">Custom Themes &amp; CPTs</div>
             </div>
           </div>
 
-          <div class="tech-tile">
-            <div class="tech-tile-icon">ðŸ˜</div>
+          <div class="tech-tile reveal reveal-delay-2">
+            <div class="tech-tile-icon" style="color: #777bb4;">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14.5v-5h2v5h-2zm0-7v-2h2v2h-2z"/>
+              </svg>
+            </div>
             <div>
               <div class="tech-tile-name">PHP 8+ OOP</div>
               <div class="tech-tile-sub">Modern Architecture</div>
             </div>
           </div>
 
-          <div class="tech-tile">
-            <div class="tech-tile-icon">ðŸŒ²</div>
+          <div class="tech-tile reveal reveal-delay-3">
+            <div class="tech-tile-icon" style="color: #525ddc;">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                <polyline points="2 17 12 22 22 17"></polyline>
+                <polyline points="2 12 12 17 22 12"></polyline>
+              </svg>
+            </div>
             <div>
               <div class="tech-tile-name">Roots Bedrock</div>
               <div class="tech-tile-sub">Sage &amp; Modern Tools</div>
             </div>
           </div>
 
-          <div class="tech-tile">
-            <div class="tech-tile-icon">ðŸ¬</div>
+          <div class="tech-tile reveal reveal-delay-4">
+            <div class="tech-tile-icon" style="color: #00758f;">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+              </svg>
+            </div>
             <div>
               <div class="tech-tile-name">MySQL &amp; MongoDB</div>
               <div class="tech-tile-sub">Database Administration</div>
             </div>
           </div>
 
-          <div class="tech-tile">
-            <div class="tech-tile-icon">âš¡</div>
+          <div class="tech-tile reveal reveal-delay-1">
+            <div class="tech-tile-icon" style="color: #dc2626;">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+              </svg>
+            </div>
             <div>
               <div class="tech-tile-name">Redis &amp; Varnish</div>
               <div class="tech-tile-sub">High-Speed Caching</div>
             </div>
           </div>
 
-          <div class="tech-tile">
-            <div class="tech-tile-icon">âš›ï¸</div>
+          <div class="tech-tile reveal reveal-delay-2">
+            <div class="tech-tile-icon" style="color: #0284c7;">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="2"></circle>
+                <path d="M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2z"></path>
+              </svg>
+            </div>
             <div>
               <div class="tech-tile-name">React.js &amp; Native</div>
               <div class="tech-tile-sub">Full-Stack Frontends</div>
             </div>
           </div>
 
-          <div class="tech-tile">
-            <div class="tech-tile-icon">ðŸŸ¢</div>
+          <div class="tech-tile reveal reveal-delay-3">
+            <div class="tech-tile-icon" style="color: #16a34a;">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16.5 9.4 7.55 4.24a1.78 1.78 0 0 0-2.5 1.55v12.42a1.78 1.78 0 0 0 2.5 1.55L16.5 14.6a1.78 1.78 0 0 0 0-3.2z"></path>
+              </svg>
+            </div>
             <div>
               <div class="tech-tile-name">Node.js &amp; Express</div>
               <div class="tech-tile-sub">Microservices &amp; APIs</div>
             </div>
           </div>
 
-          <div class="tech-tile">
-            <div class="tech-tile-icon">ðŸŽ¨</div>
+          <div class="tech-tile reveal reveal-delay-4">
+            <div class="tech-tile-icon" style="color: #ea580c;">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 5.5A3.5 3.5 0 0 1 8.5 2H12v7H8.5A3.5 3.5 0 0 1 5 5.5z"></path>
+                <path d="M12 2h3.5a3.5 3.5 0 1 1 0 7H12V2z"></path>
+                <path d="M12 12.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 1 1-7 0z"></path>
+                <path d="M5 19.5A3.5 3.5 0 0 1 8.5 16H12v3.5a3.5 3.5 0 1 1-7 0z"></path>
+                <path d="M5 12.5A3.5 3.5 0 0 1 8.5 9H12v7H8.5A3.5 3.5 0 0 1 5 12.5z"></path>
+              </svg>
+            </div>
             <div>
               <div class="tech-tile-name">Figma to Code</div>
               <div class="tech-tile-sub">Pixel-Perfect Specs</div>
             </div>
           </div>
 
-          <div class="tech-tile">
-            <div class="tech-tile-icon">ðŸ§</div>
+          <div class="tech-tile reveal reveal-delay-1">
+            <div class="tech-tile-icon" style="color: #475569;">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="4 17 10 11 4 5"></polyline>
+                <line x1="12" y1="19" x2="20" y2="19"></line>
+              </svg>
+            </div>
             <div>
               <div class="tech-tile-name">Linux &amp; cPanel</div>
               <div class="tech-tile-sub">Webuzo &amp; Server Tuning</div>
             </div>
           </div>
 
-          <div class="tech-tile">
-            <div class="tech-tile-icon">ðŸ</div>
+          <div class="tech-tile reveal reveal-delay-2">
+            <div class="tech-tile-icon" style="color: #3b82f6;">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2a4 4 0 0 0-4 4v2h8V6a4 4 0 0 0-4-4z"></path>
+                <path d="M16 8v6a4 4 0 0 1-8 0V8"></path>
+                <line x1="12" y1="18" x2="12" y2="22"></line>
+              </svg>
+            </div>
             <div>
               <div class="tech-tile-name">Python Automation</div>
               <div class="tech-tile-sub">Pandas &amp; Data Pipeline</div>
@@ -1814,12 +2244,19 @@ textarea.form-input-glass {
          ========================================================================== -->
     <section class="projects-section" id="projects">
       <div class="container">
-        <div class="section-head">
-          <div class="section-kicker">SELECTED WORK</div>
+        <div class="section-head reveal">
+          <div class="section-kicker">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+              <line x1="8" y1="21" x2="16" y2="21"></line>
+              <line x1="12" y1="17" x2="12" y2="21"></line>
+            </svg>
+            <span>SELECTED WORK</span>
+          </div>
           <h2 class="section-main-title">Live Client Platforms &amp; Architecture</h2>
         </div>
 
-        <div class="projects-filter-bar">
+        <div class="projects-filter-bar reveal">
           <button type="button" class="filter-pill active" data-filter="all">All Projects (8)</button>
           <button type="button" class="filter-pill" data-filter="media">National Media &amp; Broadcast (4)</button>
           <button type="button" class="filter-pill" data-filter="corporate">Corporate &amp; Advisory (2)</button>
@@ -1837,32 +2274,73 @@ textarea.form-input-glass {
          ========================================================================== -->
     <section class="process-section" id="process">
       <div class="container">
-        <div class="section-head">
-          <div class="section-kicker">ENGINEERING PROCESS</div>
+        <div class="section-head reveal">
+          <div class="section-kicker">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="16" y1="13" x2="8" y2="13"></line>
+              <line x1="16" y1="17" x2="8" y2="17"></line>
+              <polyline points="10 9 9 9 8 9"></polyline>
+            </svg>
+            <span>ENGINEERING PROCESS</span>
+          </div>
           <h2 class="section-main-title">How I Build High-Scale Platforms</h2>
         </div>
 
         <div class="process-grid">
-          <div class="glass-panel process-card">
-            <div class="process-step-num">01</div>
+          <div class="glass-panel process-card reveal reveal-delay-1">
+            <div class="process-top-row">
+              <div class="process-step-num">01</div>
+              <div class="process-icon-box">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+              </div>
+            </div>
             <h3 class="process-card-title">Discovery &amp; Figma Audit</h3>
             <p class="process-card-desc">Dissecting design tokens, layout grids, dynamic typography scales, and responsive breakpoints directly from Figma files.</p>
           </div>
 
-          <div class="glass-panel process-card">
-            <div class="process-step-num">02</div>
+          <div class="glass-panel process-card reveal reveal-delay-2">
+            <div class="process-top-row">
+              <div class="process-step-num">02</div>
+              <div class="process-icon-box">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                  <polyline points="2 17 12 22 22 17"></polyline>
+                  <polyline points="2 12 12 17 22 12"></polyline>
+                </svg>
+              </div>
+            </div>
             <h3 class="process-card-title">Architecture &amp; Schema</h3>
             <p class="process-card-desc">Structuring custom post types, taxonomies, metadata schemas, and object caching strategies for high concurrency.</p>
           </div>
 
-          <div class="glass-panel process-card">
-            <div class="process-step-num">03</div>
+          <div class="glass-panel process-card reveal reveal-delay-3">
+            <div class="process-top-row">
+              <div class="process-step-num">03</div>
+              <div class="process-icon-box">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+            </div>
             <h3 class="process-card-title">Custom Theme Engineering</h3>
             <p class="process-card-desc">Developing bespoke PHP 8+ templates, Gutenberg modular blocks, and asset optimization pipelines delivering sub-second LCP.</p>
           </div>
 
-          <div class="glass-panel process-card">
-            <div class="process-step-num">04</div>
+          <div class="glass-panel process-card reveal reveal-delay-4">
+            <div class="process-top-row">
+              <div class="process-step-num">04</div>
+              <div class="process-icon-box">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+              </div>
+            </div>
             <h3 class="process-card-title">Hardening &amp; Migration</h3>
             <p class="process-card-desc">Configuring DMARC/SPF/DKIM protocols, OWASP top 10 security shields, and executing zero-downtime database migrations.</p>
           </div>
@@ -1875,19 +2353,31 @@ textarea.form-input-glass {
          ========================================================================== -->
     <section class="experience-section" id="experience">
       <div class="container">
-        <div class="section-head">
-          <div class="section-kicker">CAREER TIMELINE</div>
+        <div class="section-head reveal">
+          <div class="section-kicker">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+              <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+            </svg>
+            <span>CAREER TIMELINE</span>
+          </div>
           <h2 class="section-main-title">Professional Experience &amp; Credentials</h2>
         </div>
 
         <div class="timeline-list">
-          <div class="glass-panel timeline-card">
+          <div class="glass-panel timeline-card reveal">
             <div class="timeline-header-row">
               <div>
                 <h3 class="timeline-role">Senior Web &amp; WordPress Developer</h3>
-                <div class="timeline-company">Mediamax Network Limited â€¢ Nairobi, Kenya</div>
+                <div class="timeline-company">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                  </svg>
+                  <span>Mediamax Network Limited • Nairobi, Kenya</span>
+                </div>
               </div>
-              <span class="timeline-date-chip">April 2025 â€“ Present</span>
+              <span class="timeline-date-chip">April 2025 – Present</span>
             </div>
             <p class="timeline-desc">
               Led the pixel-perfect front-end translation and custom theme architecture for prominent national digital platforms directly from Figma prototypes. Engineered and deployed major digital properties including the primary media hub (mediamaxnetwork.co.ke), news publishing portal (peopledaily.digital), broadcast streaming platform (k24.digital), and audio portal (mediamaxwaves.com) serving over 10 million consumers. Managed zero-downtime manual database migrations.
@@ -1901,13 +2391,19 @@ textarea.form-input-glass {
             </div>
           </div>
 
-          <div class="glass-panel timeline-card">
+          <div class="glass-panel timeline-card reveal">
             <div class="timeline-header-row">
               <div>
                 <h3 class="timeline-role">Full Stack Developer</h3>
-                <div class="timeline-company">Datalait Limited â€¢ Nairobi, Kenya</div>
+                <div class="timeline-company">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                  </svg>
+                  <span>Datalait Limited • Nairobi, Kenya</span>
+                </div>
               </div>
-              <span class="timeline-date-chip">January 2021 â€“ April 2025</span>
+              <span class="timeline-date-chip">January 2021 – April 2025</span>
             </div>
             <p class="timeline-desc">
               Spearheaded the development of a cross-platform farmer ecosystem (Alika Farmer Management System) using MongoDB, Express.js, React, Node.js, and React Native, benefiting over 139,000 farmers. Conceptualized and deployed an innovative MERN advertising solution (Newvision Classified System) generating KES 2.4 million in platform revenue from 1,200 concurrent ads.
@@ -1920,13 +2416,19 @@ textarea.form-input-glass {
             </div>
           </div>
 
-          <div class="glass-panel timeline-card">
+          <div class="glass-panel timeline-card reveal">
             <div class="timeline-header-row">
               <div>
                 <h3 class="timeline-role">Database Administrator</h3>
-                <div class="timeline-company">Komlink Networks â€¢ Nairobi, Kenya</div>
+                <div class="timeline-company">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                  </svg>
+                  <span>Komlink Networks • Nairobi, Kenya</span>
+                </div>
               </div>
-              <span class="timeline-date-chip">May 2017 â€“ August 2018</span>
+              <span class="timeline-date-chip">May 2017 – August 2018</span>
             </div>
             <p class="timeline-desc">
               Developed custom server-side automation scripts utilizing Python, Openpyxl, and Pandas. Fully automated extraction, validation, conditional modification, and formatting of bulk transactional enterprise records, eliminating script-level data mismatches.
@@ -1940,23 +2442,35 @@ textarea.form-input-glass {
         </div>
 
         <div class="credentials-row">
-          <div class="glass-panel credential-box">
-            <h4 class="credential-heading">ðŸŽ“ Education</h4>
-            <div style="font-weight: 700; color: var(--text-primary);">Bachelor of Science in Software Engineering</div>
-            <div style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 8px;">Murang'a University of Technology (2015 â€“ 2020)</div>
-            <p style="font-size: 0.825rem; color: var(--text-secondary);">Comprehensive curriculum covering software architectures, database design, cybersecurity frameworks, and systems engineering.</p>
+          <div class="glass-panel credential-box reveal reveal-delay-1">
+            <h4 class="credential-heading">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+              </svg>
+              <span>Education</span>
+            </h4>
+            <div style="font-family: var(--font-display); font-weight: 700; color: var(--text-primary); font-size: 1rem;">Bachelor of Science in Software Engineering</div>
+            <div style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 8px;">Murang'a University of Technology (2015 – 2020)</div>
+            <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.6;">Comprehensive curriculum covering distributed architectures, relational and non-relational database design, cybersecurity frameworks, and systems engineering.</p>
           </div>
 
-          <div class="glass-panel credential-box">
-            <h4 class="credential-heading">ðŸ“œ Certifications &amp; Referees</h4>
+          <div class="glass-panel credential-box reveal reveal-delay-2">
+            <h4 class="credential-heading">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="8" r="7"></circle>
+                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+              </svg>
+              <span>Certifications &amp; Referees</span>
+            </h4>
             <div class="cert-pill-list" style="margin-bottom: 16px;">
               <span class="cert-pill">CISCO Cyber Security Essentials</span>
               <span class="cert-pill">CISCO Intro to Cyber Security</span>
               <span class="cert-pill">Stanford Machine Learning</span>
               <span class="cert-pill">MIT Deep Learning</span>
             </div>
-            <div style="font-size: 0.8rem; color: var(--text-muted); padding-top: 10px; border-top: 1px solid rgba(226, 232, 240, 0.8);">
-              <strong>Referee:</strong> Julius Bett | CEO, Datalait Limited (jbett2002@gmail.com | +254 722578293)
+            <div style="font-size: 0.825rem; color: var(--text-muted); padding-top: 10px; border-top: 1px solid rgba(226, 232, 240, 0.85);">
+              <strong>Verified Referee:</strong> Julius Bett | CEO, Datalait Limited (<a href="mailto:jbett2002@gmail.com" style="color: var(--accent-indigo); text-decoration: underline;">jbett2002@gmail.com</a> | +254 722578293)
             </div>
           </div>
         </div>
@@ -1969,11 +2483,16 @@ textarea.form-input-glass {
          ========================================================================== -->
     <section class="contact-section" id="contact">
       <div class="container">
-        <div class="glass-panel contact-card-main">
+        <div class="glass-panel contact-card-main reveal">
           
           <div class="contact-left-col">
             <div>
-              <div class="section-kicker">LET'S CONNECT</div>
+              <div class="section-kicker">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                </svg>
+                <span>LET'S CONNECT</span>
+              </div>
               <h2 class="contact-card-title">Have a project in mind? Let's discuss building it.</h2>
               <p class="contact-card-subtitle">
                 Available for Senior Web &amp; WordPress Developer roles, enterprise theme engineering contracts, and high-concurrency platform migrations.
@@ -1982,24 +2501,38 @@ textarea.form-input-glass {
 
             <div class="contact-channels-list">
               <a href="mailto:omiliakelvin1@gmail.com" class="contact-channel-pill" id="copy-email-btn" title="Click to email or copy">
-                <div style="display: flex; align-items: center; gap: 10px;">
-                  <span>âœ‰ï¸</span>
+                <div style="display: flex; align-items: center; gap: 12px;">
+                  <span class="channel-icon-wrap" style="background: rgba(79, 70, 229, 0.1); color: var(--accent-indigo);">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                      <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                  </span>
                   <span>omiliakelvin1@gmail.com</span>
                 </div>
                 <span class="btn-channel-action">Send Email</span>
               </a>
 
               <a href="https://wa.me/254700688401?text=Hello%20Eng%20Kelvin%2C%20I%20reviewed%20your%20portfolio..." target="_blank" rel="noopener noreferrer" class="contact-channel-pill">
-                <div style="display: flex; align-items: center; gap: 10px;">
-                  <span>ðŸ’¬</span>
+                <div style="display: flex; align-items: center; gap: 12px;">
+                  <span class="channel-icon-wrap" style="background: rgba(37, 211, 102, 0.1); color: #25d366;">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.634.077-1.782-.399-1.468-.609-2.428-2.12-2.501-2.22-.072-.099-.601-.799-.601-1.524 0-.726.381-1.082.516-1.229.135-.148.297-.185.396-.185.099 0 .198.001.288.005.096.004.225-.036.351.267.135.324.459 1.12.5 1.202.041.082.068.177.014.285-.054.108-.081.176-.162.271-.081.095-.17.212-.243.285-.081.082-.166.171-.071.334.095.163.423.698.908 1.13.624.556 1.15.728 1.313.809.162.081.257.068.351-.041.095-.108.405-.473.513-.635.108-.162.216-.135.365-.081.148.054.945.445 1.107.526.162.081.27.122.311.189.04.068.04.392-.104.797z"/>
+                    </svg>
+                  </span>
                   <span>+254 700 688 401</span>
                 </div>
                 <span class="btn-channel-action" style="color: #25d366; background: rgba(37, 211, 102, 0.1);">WhatsApp</span>
               </a>
 
               <div class="contact-channel-pill" style="cursor: default;">
-                <div style="display: flex; align-items: center; gap: 10px;">
-                  <span>ðŸ“</span>
+                <div style="display: flex; align-items: center; gap: 12px;">
+                  <span class="channel-icon-wrap" style="background: rgba(14, 165, 233, 0.1); color: var(--accent-blue);">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                      <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                  </span>
                   <span>Nairobi, Kenya (Remote &amp; Hybrid)</span>
                 </div>
                 <span class="btn-channel-action">Worldwide</span>
@@ -2026,7 +2559,7 @@ textarea.form-input-glass {
 
               <button type="submit" class="btn-pill-dark" style="justify-content: center; padding: 14px 28px; width: 100%; font-size: 0.95rem;">
                 <span>Send Message Directly</span>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                   <line x1="22" y1="2" x2="11" y2="13"></line>
                   <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
                 </svg>
@@ -2043,7 +2576,7 @@ textarea.form-input-glass {
   <div class="modal-overlay" id="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
     <div class="modal-dialog">
       <button type="button" class="modal-close-btn" onclick="closeProjectModal()" aria-label="Close modal">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
           <line x1="18" y1="6" x2="6" y2="18"></line>
           <line x1="6" y1="6" x2="18" y2="18"></line>
         </svg>
@@ -2267,7 +2800,7 @@ function initProjects() {
         const displayDomain = project.displayUrl || project.demoUrl.replace(/^https?:\/\//, "");
 
         return `
-          <article class="project-card" data-id="${project.id}">
+          <article class="project-card reveal" data-id="${project.id}">
             <div class="browser-top-bar">
               <div class="chrome-dots">
                 <span class="chrome-dot red"></span>
@@ -2275,7 +2808,7 @@ function initProjects() {
                 <span class="chrome-dot green"></span>
               </div>
               <div class="browser-address-pill" title="Domain: ${escapeHTML(displayDomain)}">
-                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                   <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
                   <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
                 </svg>
@@ -2294,12 +2827,11 @@ function initProjects() {
               
               <a href="${project.demoUrl}" target="_blank" rel="noopener noreferrer" class="project-screenshot-overlay" title="Open ${escapeHTML(project.title)} in new tab">
                 <span class="overlay-visit-btn">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                    <polyline points="15 3 21 3 21 9"></polyline>
-                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  <span>Visit Live Site</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
                   </svg>
-                  Visit Live Site â†—
                 </span>
               </a>
             </div>
@@ -2316,15 +2848,14 @@ function initProjects() {
               <div class="project-card-footer">
                 <a href="${project.demoUrl}" target="_blank" rel="noopener noreferrer" class="btn-visit-live" title="Visit Live Website">
                   <span>Visit Live Site</span>
-                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                    <polyline points="15 3 21 3 21 9"></polyline>
-                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
                   </svg>
                 </a>
                 <button type="button" class="btn-view-specs" onclick="openProjectModal('${project.id}')">
                   <span>Architecture &amp; Specs</span>
-                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                     <line x1="5" y1="12" x2="19" y2="12"></line>
                     <polyline points="12 5 19 12 12 19"></polyline>
                   </svg>
@@ -2335,6 +2866,9 @@ function initProjects() {
         `;
       })
       .join("");
+
+    // Trigger reveal observation for new cards
+    observeReveals();
   }
 
   filterButtons.forEach(btn => {
@@ -2378,9 +2912,15 @@ window.openProjectModal = function (projectId) {
     <h2 class="modal-title">${escapeHTML(project.title)}</h2>
     <p class="modal-tagline">${escapeHTML(project.tagline)}</p>
 
-    <div style="margin: 20px 0; border: 1px solid rgba(226, 232, 240, 0.8); border-radius: var(--radius-md); overflow: hidden;">
-      <div style="background: #f8fafc; padding: 8px 14px; font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted); border-bottom: 1px solid rgba(226, 232, 240, 0.8); display: flex; align-items: center; justify-content: space-between;">
-        <span>ðŸ”’ ${escapeHTML(project.displayUrl || project.demoUrl)}</span>
+    <div style="margin: 20px 0; border: 1px solid rgba(226, 232, 240, 0.85); border-radius: var(--radius-md); overflow: hidden;">
+      <div style="background: #f8fafc; padding: 10px 16px; font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted); border-bottom: 1px solid rgba(226, 232, 240, 0.85); display: flex; align-items: center; justify-content: space-between;">
+        <span style="display: inline-flex; align-items: center; gap: 6px;">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+          </svg>
+          <span>${escapeHTML(project.displayUrl || project.demoUrl)}</span>
+        </span>
         <span style="color: var(--accent-indigo); font-weight: 700;">Live Production Platform</span>
       </div>
       <img src="${project.screenshotUrl}" alt="${escapeHTML(project.title)} Preview" style="width: 100%; aspect-ratio: 16/9.5; object-fit: cover; object-position: top center;" />
@@ -2403,10 +2943,14 @@ window.openProjectModal = function (projectId) {
 
     <div class="modal-actions">
       <a href="${project.demoUrl}" target="_blank" rel="noopener noreferrer" class="btn-pill-dark">
-        Launch Live Website â†—
+        <span>Launch Live Website</span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="7" y1="17" x2="17" y2="7"></line>
+          <polyline points="7 7 17 7 17 17"></polyline>
+        </svg>
       </a>
       <a href="https://wa.me/254700688401?text=Hello%20Eng%20Kelvin%2C%20I%20am%20inquiring%20about%20your%20work%20on%20${encodeURIComponent(project.title)}" target="_blank" rel="noopener noreferrer" class="btn-pill-frosted" style="color: #25d366;">
-        Discuss on WhatsApp
+        <span>Discuss on WhatsApp</span>
       </a>
     </div>
   `;
@@ -2460,7 +3004,12 @@ function showToast(msg) {
   if (!container) return;
   const toast = document.createElement("div");
   toast.className = "toast";
-  toast.textContent = msg;
+  toast.innerHTML = `
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="20 6 9 17 4 12"></polyline>
+    </svg>
+    <span>${escapeHTML(msg)}</span>
+  `;
   container.appendChild(toast);
   setTimeout(() => toast.classList.add("show"), 10);
   setTimeout(() => {
@@ -2469,9 +3018,106 @@ function showToast(msg) {
   }, 4000);
 }
 
+// Scrollspy for active navbar state
+function initScrollspy() {
+  const sections = document.querySelectorAll("section[id]");
+  const navLinks = document.querySelectorAll(".nav-item a");
+
+  function onScroll() {
+    const scrollY = window.pageYOffset + 140;
+
+    sections.forEach(current => {
+      const sectionHeight = current.offsetHeight;
+      const sectionTop = current.offsetTop;
+      const sectionId = current.getAttribute("id");
+
+      if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+        navLinks.forEach(link => {
+          link.classList.remove("active");
+          if (link.getAttribute("href") === `#${sectionId}`) {
+            link.classList.add("active");
+          }
+        });
+      }
+    });
+  }
+
+  window.addEventListener("scroll", onScroll, { passive: true });
+  onScroll();
+}
+
+// Intersection Observer for scroll reveal animations
+function observeReveals() {
+  const revealElements = document.querySelectorAll(".reveal:not(.in-view)");
+  if (!("IntersectionObserver" in window)) {
+    revealElements.forEach(el => el.classList.add("in-view"));
+    return;
+  }
+
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("in-view");
+        obs.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.12,
+    rootMargin: "0px 0px -40px 0px"
+  });
+
+  revealElements.forEach(el => observer.observe(el));
+}
+
+// Animated Stat Counters
+function initCounterAnimation() {
+  const statNumbers = document.querySelectorAll(".stat-num");
+  let started = false;
+
+  function countUp() {
+    statNumbers.forEach(num => {
+      const targetStr = num.getAttribute("data-target");
+      if (!targetStr) return;
+      const target = parseFloat(targetStr);
+      const isDecimal = targetStr.includes(".");
+      const suffix = num.textContent.replace(/[0-9.]/g, "");
+      const duration = 1600;
+      const startTime = performance.now();
+
+      function update(currentTime) {
+        const elapsed = currentTime - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+        const easeProgress = 1 - Math.pow(1 - progress, 3);
+        const currentVal = (target * easeProgress).toFixed(isDecimal ? 1 : 0);
+        num.textContent = `${currentVal}${suffix}`;
+        if (progress < 1) {
+          requestAnimationFrame(update);
+        } else {
+          num.textContent = `${target}${suffix}`;
+        }
+      }
+      requestAnimationFrame(update);
+    });
+  }
+
+  const statsSection = document.getElementById("about");
+  if (statsSection && "IntersectionObserver" in window) {
+    const observer = new IntersectionObserver(entries => {
+      if (entries[0].isIntersecting && !started) {
+        started = true;
+        countUp();
+      }
+    }, { threshold: 0.3 });
+    observer.observe(statsSection);
+  }
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   initProjects();
   initContactForm();
+  initScrollspy();
+  observeReveals();
+  initCounterAnimation();
 
   // Mobile menu toggle
   const toggleBtn = document.getElementById("mobile-menu-toggle");
@@ -2483,15 +3129,25 @@ document.addEventListener("DOMContentLoaded", () => {
       if (!isVisible) {
         navLinks.style.flexDirection = "column";
         navLinks.style.position = "absolute";
-        navLinks.style.top = "70px";
+        navLinks.style.top = "74px";
         navLinks.style.left = "16px";
         navLinks.style.right = "16px";
         navLinks.style.background = "rgba(255, 255, 255, 0.96)";
-        navLinks.style.backdropFilter = "blur(20px)";
-        navLinks.style.borderRadius = "20px";
+        navLinks.style.backdropFilter = "blur(24px)";
+        navLinks.style.borderRadius = "24px";
         navLinks.style.padding = "20px";
-        navLinks.style.boxShadow = "0 20px 40px rgba(0,0,0,0.1)";
+        navLinks.style.boxShadow = "0 20px 50px rgba(15, 23, 42, 0.12)";
+        navLinks.style.border = "1px solid rgba(255, 255, 255, 0.9)";
       }
+    });
+
+    // Close mobile menu when a nav link is clicked
+    navLinks.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => {
+        if (window.innerWidth <= 768) {
+          navLinks.style.display = "none";
+        }
+      });
     });
   }
 });
